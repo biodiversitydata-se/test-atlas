@@ -45,7 +45,7 @@ The Ubuntu 20.04 image we used was: https://cloud-images.ubuntu.com/focal/curren
 Add the image by clicking "Images" in the left column of the Cloud dashboard, and then "+ Create image".
 Call the image "ubuntu20.04" and use "QCOW2 - QEMU Emulator" as "Format".
 
-4. Create an image for the Atlas
+4. Create an instance of that image
 
 In the *remote* machine run:
 

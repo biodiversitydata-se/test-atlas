@@ -76,6 +76,31 @@ ssh la-test-sequoia
 
 ## Install the la-toolkit in your computer: https://github.com/living-atlases/la-toolkit#prerequisites
 
-### On Mac
+Make sure you have Docker and Docker compose installed.
+You need to be able to run Docker as non-root user.
 
-### On Linux
+### Install Docker and Docker Compose on Mac
+
+### Install Docker and Docker Compose on Linux
+
+See instructions at: https://docs.docker.com/engine/install/ubuntu/.
+I used instructions under: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+1. Create a directory structure for `la-toolkit`
+
+The default is to create directories starting at `/data`.
+This might not work at all (OS X) or be inconvenient, and you might prefer to create directories in your home, e.g. `~/la-toolkit`.
+
+2. Download `la-toolkit` files and start Docker
+
+Download [docker-compose.yml](https://github.com/living-atlases/la-toolkit/blob/master/docker-compose.yml) and [mongo-init.sh](https://github.com/living-atlases/la-toolkit/blob/master/mongo-init.sh)
+from the `la-toolkit` repo.
+If you didn't choose the default paths for your directory structure, edit `docker-compose.yml` to add the correct paths.
+
+Start the service:
+```
+docker-compose up -d
+```
+
+The toolkit is now listening on http://localhost:2010/.
+User your browser to interact with it.

@@ -59,6 +59,7 @@ ssh -i /home/youruser/snap/microstack/common/.ssh/id_microstack ubuntu@10.20.20.
 
 Add your *public* key to the VMs `.ssh/authorized_keys`.
 (For this, you need to logon to the VM from the *remote* machine, then edit the file.)
+(You can also add your key to "Key pairs" in the Cloud dashboard. If this means that the keys will be added to new and/or existing VMs was not tested by us.)
 
 Add the below -- change `sequoia` to the name of your *remote* machine, and type the correct IP number to the VM -- to your `.ssh/config` in your *local* machine:
 ```
